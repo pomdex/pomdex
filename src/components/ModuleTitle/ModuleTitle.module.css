@@ -1,0 +1,11 @@
+.moduleTitle {
+  font-weight: 900;
+  font-size: 1.13rem;
+  margin: 1.1rem 0;
+}
+
+@media screen and (max-width: 500px) {
+  .moduleTitle {
+    font-size: 3.39vw;
+  }
+}

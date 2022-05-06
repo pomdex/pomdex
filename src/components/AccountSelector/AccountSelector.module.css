@@ -1,0 +1,48 @@
+.accountSelectorHorizontal,
+.accountSelectorVertical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accountSelectorVertical {
+  flex-direction: column;
+}
+
+.accountWrapper {
+  position: relative;
+  background-color: var(--secondary-background-color);
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font: inherit;
+  opacity: 1;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdown {
+  position: absolute;
+  margin: 0;
+  list-style-type: none;
+  background-color: var(--secondary-background-color);
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+@media (hover: hover) {
+  .accountWrapper:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}

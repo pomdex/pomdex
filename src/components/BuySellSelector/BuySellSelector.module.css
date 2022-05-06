@@ -1,0 +1,9 @@
+.buySellSelector {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.buySellSelector button {
+  width: 50%;
+  border-radius: 0;
+}

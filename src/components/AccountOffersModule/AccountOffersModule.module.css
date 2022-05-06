@@ -1,0 +1,185 @@
+.myOffersSection {
+  width: 100%;
+  margin-bottom: var(--section-margin);
+}
+
+.myOffersList {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.orderbookSideLeft,
+.orderbookSideRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+}
+
+.orderbookSideLeft {
+  border-radius: var(--section-border-radius) 0 0 var(--section-border-radius);
+}
+
+.orderbookSideRight {
+  border-left: none;
+  border-radius: 0 var(--section-border-radius) var(--section-border-radius) 0;
+}
+
+.offersHeader {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.offersHeader > button {
+  margin: 0;
+}
+
+.cancelOffersSideButton {
+  background-color: var(--color-red);
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.orderbookTableHeader {
+  display: flex;
+  font-weight: var(--bold);
+  padding: 0 var(--table-padding);
+  gap: var(--table-padding);
+  padding-bottom: var(--table-header-margin-bottom);
+}
+
+.orderbookTableHeaderItem {
+  flex: 1;
+}
+
+.offerRow {
+  display: flex;
+  border-top: var(--border);
+  padding: 12px var(--table-padding);
+  gap: var(--table-padding);
+}
+
+.orderbookRowCell,
+.buyPrice,
+.sellPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.buyPrice {
+  color: var(--color-green);
+}
+
+.sellPrice {
+  color: var(--color-red);
+}
+
+.editCancelButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.editOfferButton,
+.cancelOfferButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.editOfferButton {
+  background-color: var(--color-blue);
+}
+.cancelOfferButton {
+  background-color: var(--color-red);
+}
+
+.offerCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  border-top: var(--border);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.offerCardRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .myOffersList {
+    flex-direction: column;
+    gap: var(--section-margin)
+  }
+
+  .orderbookSideLeft,
+  .orderbookSideRight {
+    width: 100%;
+  }
+
+  .orderbookSideLeft {
+    border: var(--border);
+    border-radius: var(--section-border-radius);
+  }
+  
+  .orderbookSideRight {
+    border: var(--border);
+    border-radius: var(--section-border-radius);
+  }
+
+  .orderbookRowCell,
+  .buyPrice,
+  .sellPrice {
+    flex: unset;
+  }
+
+  .editOfferButton,
+  .cancelOfferButton {
+    width: unset;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .orderbookTableHeaderItem,
+  .amountHeaderLabel,
+  .orderbookRowCell,
+  .buyPrice,
+  .sellPrice,
+  .editOfferButton,
+  .cancelOfferButton {
+    font-size: var(--mobile-responsive-font-size);
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .myOffersSection > button,
+  .offersHeader button {
+    font-size: 3.39vw;
+  }
+  
+  .editOfferButton,
+  .cancelOfferButton {
+    height: 5vw;
+  }
+}

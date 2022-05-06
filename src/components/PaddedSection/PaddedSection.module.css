@@ -1,0 +1,10 @@
+.paddedSection {
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+	border-radius: var(--section-border-radius);
+  padding: var(--section-padding);
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}

@@ -1,0 +1,27 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.4s;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.globalModalWrapper{
+  background-color: var(--background-color);
+  background-color: blue;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}

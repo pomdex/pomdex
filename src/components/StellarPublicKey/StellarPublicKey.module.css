@@ -1,0 +1,10 @@
+.account{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.identicon{
+  width: 1rem;
+  height: 1rem;
+}

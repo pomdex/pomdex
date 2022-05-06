@@ -1,0 +1,109 @@
+.offerInput {
+  display: flex;
+  flex-direction: column;
+	border-radius: var(--section-border-radius);
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.offerInputHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.availableSection {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.availableLabel {
+  flex: 1;
+  padding: 0 0.5rem;
+}
+
+.availableBalance {
+  white-space: nowrap;
+  flex: 1;
+}
+
+.inputGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  row-gap: 10px;
+}
+
+.inputRow {
+  display: flex;
+  font-size: 1rem;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.label {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+.input {
+  font-size: 0.9rem;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  width: 100%;
+  border: solid 1px var(--secondary-background-color);
+  border-radius: 2px 0 0 2px;
+}
+
+.inputAsset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: var(--secondary-background-color);
+  border-radius: 0 2px 2px 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.buttonContainer {
+  grid-column: 2 / 4;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  padding-left: 0.65px;
+}
+
+.percentageButton {
+  background-color: var(--color-blue);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  flex: 1;
+  border-radius: 2px;
+}
+
+.percentageButton:active {
+  opacity: 1.0;
+}
+
+@media (hover: hover) {
+  .percentageButton:hover {
+    opacity: 0.9;
+  }
+}

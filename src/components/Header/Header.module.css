@@ -1,0 +1,101 @@
+.container {
+  background-color: var(--secondary-background-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--desktop-padding);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--site-max-width);
+  min-height: var(--header-min-height);
+}
+
+.logoWrapper {
+  flex: 1;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.clockWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accountSelectorWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: var(--header-min-height);
+}
+
+.menuButtonWrapper {
+  display: none;
+  flex: 1;
+  align-items: center;
+  min-height: var(--header-min-height);
+  margin-left: 1rem;
+}
+
+.menuButtonWrapper button{
+  width: 2rem;
+  font-size: 1.2rem;
+}
+
+.menu {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+}
+
+.accountSection {
+  margin-top: 0.4rem;
+}
+
+.accountSection button {
+  font-size: 1.2rem;
+  padding: 0.4rem 1.4rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .navLinksWrapper {
+    display: none;
+  }
+  
+  .accountSelectorWrapper {
+    flex: unset;
+    margin-left: auto;
+  }
+  
+  .menuButtonWrapper {
+    display: flex;
+    flex: unset;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 0rem var(--mobile-padding);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .clockWrapper {
+    display: none;
+  }
+}

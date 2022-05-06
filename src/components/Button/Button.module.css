@@ -1,0 +1,60 @@
+.button,
+.redButton,
+.greenButton,
+.blueButton,
+.purpleButton,
+.transparentButton,
+.whiteButton {
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button:active,
+.redButton:active,
+.greenButton:active,
+.blueButton:active,
+.purpleButton:active,
+.transparentButton:active,
+.whiteButton:active {
+  opacity: 1;
+}
+
+.redButton {
+  background-color: var(--color-red);
+}
+
+.greenButton {
+  background-color: var(--color-green);
+}
+
+.blueButton {
+  background-color: var(--color-blue);
+}
+
+.purpleButton {
+  background-color: var(--color-aquarius-purple);
+}
+
+.transparentButton {
+  background-color: transparent;
+}
+
+.whiteButton {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (hover: hover) {
+  .button:hover,
+  .redButton:hover,
+  .greenButton:hover,
+  .blueButton:hover,
+  .purpleButton:hover,
+  .transparentButton:hover,
+  .whiteButton:hover {
+    opacity: 0.9;
+  }
+}

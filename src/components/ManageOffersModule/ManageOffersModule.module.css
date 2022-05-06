@@ -1,0 +1,104 @@
+.offerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: var(--section-margin);
+  border: var(--border);
+  border-radius: var(--section-border-radius);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.offerSectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: var(--border);
+}
+
+.desktopOfferInputSection {
+  display: flex;
+  width: 100%;
+}
+
+.mobileOfferInputSection {
+  width: 100%;
+}
+
+.offerInputHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buyOfferInput,
+.sellOfferInput {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.buyOfferInput {
+  border-right: var(--border);
+}
+
+.offerInput {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  border-top: var(--border);
+}
+
+.input {
+  flex: 3;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  box-sizing: border-box;
+}
+
+.inputAsset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: var(--secondary-background-color);
+  border-radius: 0 2px 2px 0;
+}
+
+.label {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 80.4%;
+  gap: 0.5rem;
+  box-sizing: border-box;
+}
+
+.percentageButton {
+  background-color: var(--color-blue);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  flex: 1;
+  border-radius: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .offerSectionHeader {
+    flex-direction: column;
+  }
+}

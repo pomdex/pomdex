@@ -1,0 +1,35 @@
+.containerHorizontal,
+.containerVertical {
+  list-style-type: none;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.containerHorizontal {
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.containerVertical {
+  flex-direction: column;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (hover: hover) {
+  .link:hover {
+    opacity: var(--link-hover-opacity);
+  }
+}

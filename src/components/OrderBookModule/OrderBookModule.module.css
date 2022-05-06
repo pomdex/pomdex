@@ -1,0 +1,132 @@
+.orderbook {
+  display: flex;
+  width: 100%;
+  margin-bottom: var(--section-margin);
+  box-sizing: border-box;
+}
+
+.orderbookSideLeft,
+.orderbookSideRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+  box-sizing: border-box;
+}
+
+.orderbookSideLeft {
+  border-radius: var(--section-border-radius) 0 0 var(--section-border-radius);
+}
+
+.orderbookSideRight {
+  border-left: none;
+  border-radius: 0 var(--section-border-radius) var(--section-border-radius) 0;
+}
+
+.orderbookTableHeader {
+  display: flex;
+  font-weight: var(--bold);
+  padding-bottom: var(--table-header-margin-bottom);
+}
+
+.amountHeaderLabel {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: var(--amount-header-label-gap);
+}
+
+.orderbookTableHeaderItem,
+.amountHeaderLabel {
+  flex: 1;
+}
+
+.amountAssetCode {
+  font-size: var(--asset-code-font-size);
+}
+
+.orderbookRow {
+  display: flex;
+  border-top: var(--border);
+  cursor: pointer;
+  padding: 12px 0px 12px 0px;
+}
+
+.orderbookTableHeader,
+.orderbookRow {
+  box-sizing: border-box;
+  padding-left: var(--table-padding);
+  padding-right: var(--table-padding);
+  gap: var(--table-padding);
+}
+
+.orderbookRowCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+}
+
+.buyPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-green);
+  flex: 1;
+}
+
+.sellPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-red);
+  flex: 1;
+}
+
+@media (hover: hover) {
+  .orderbookRow:hover {
+    background-color: #222;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .orderbookTableHeaderItem {
+    display: flex;
+    justify-content: center;
+  }
+
+  .amountHeaderLabel,
+  .orderbookTableHeaderItem,
+  .buyPrice,
+  .sellPrice,
+  .orderbookRowCell {
+    flex: unset;
+  }
+
+  .orderbookTableHeader,
+  .orderbookRow {
+    justify-content: space-between;
+  }
+
+  .orderbookRowCell {
+    display: unset;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .orderbookTableHeaderItem,
+  .amountHeaderLabel,
+  .orderbookRowCell,
+  .buyPrice,
+  .sellPrice {
+    font-size: var(--mobile-responsive-font-size);
+  }
+  
+  .amountAssetCode {
+    font-size: var(--mobile-asset-code-responsive-font-size);
+  }
+}

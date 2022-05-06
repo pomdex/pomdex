@@ -1,0 +1,9 @@
+.modalWrapper {
+  background-color: var(--background-color);
+  border: 2px solid #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}

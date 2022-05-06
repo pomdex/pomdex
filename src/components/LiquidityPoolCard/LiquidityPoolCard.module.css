@@ -1,0 +1,183 @@
+.poolCard {
+  overflow: hidden;
+}
+
+.poolCard > button:disabled {
+  cursor: default;
+}
+
+.assetCard,
+.assetCardExpandable,
+.assetCardExpanded {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  border: none;
+}
+
+.assetCard {
+  justify-content: center;
+}
+
+.assetCard,
+.assetCardExpandable {
+  background-color: var(--background-color);
+}
+
+.assetCardExpanded {
+  background-color: var(--secondary-background-color);
+}
+
+.assetCardExpandable,
+.assetCardExpanded {
+  padding: 0.8rem 0.5rem;
+  cursor: pointer;
+}
+
+.downArrow,
+.upArrow {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.downArrow {
+  transform: rotate(0deg);
+  transition: transform 300ms ease-out;
+}
+
+.upArrow {
+  transform: rotate(180deg);
+  transition: transform 300ms ease-out;
+}
+
+.assetIdentifier {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: baseline;
+}
+
+.assetLogoSection {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+} 
+
+.assetLogo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.assetCodes {
+  font-size: 1.2rem;
+  font-weight: var(--bold);
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.assetDomains {
+  display: flex;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+.assetBalancesSection {
+  margin-left: auto;
+  font-size: 1rem;
+  text-align: right;
+  overflow: hidden;
+}
+
+.assetBalance {
+  display: flex;
+  justify-content: flex-end;
+  white-space: nowrap;
+  overflow: hidden;
+  gap: 0.3rem;
+}
+
+.boldAssetCode {
+  font-weight: var(--bold);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.poolDetailsWrapper {
+  transition: max-height 300ms ease-out;
+  background-color: var(--secondary-background-color);
+  overflow: hidden;
+  max-height: 0;
+}
+
+.poolDetailsWrapperExpanded {
+  background-color: var(--secondary-background-color);
+  transition: max-height 300ms ease-out;
+  max-height: 150px;
+}
+
+.poolDetails {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; 
+  gap: 0.5rem;
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 0.5rem;
+  box-sizing: border-box;
+}
+
+.detailLabel {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+  box-sizing: border-box;
+}
+
+.buttonContainer button {
+  flex: 1;
+  font-size: 1rem;
+}
+
+@media (hover: hover) {
+  .assetCardExpandable:hover {
+    background-color: var(--secondary-background-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .assetIdentifier {
+    overflow: hidden;
+  }
+
+  .downArrow,
+  .upArrow {
+    margin-left: auto;
+  }
+
+  .poolDetailsWrapperExpanded {
+    max-height: 350px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .assetLogoSection {
+    display: none;
+  }
+}

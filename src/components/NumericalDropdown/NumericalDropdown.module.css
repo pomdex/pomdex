@@ -1,0 +1,13 @@
+.numericalDropdown {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.select {
+  min-width: 3rem;
+  font-family: inherit;
+  background-color: #fff;
+  border-radius: 2px;
+}

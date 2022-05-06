@@ -1,0 +1,52 @@
+.balancesModule {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.settingButton {
+  background-color: var(--background-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0 0;
+}
+
+.icon {
+  margin-left: 0.5rem;
+}
+
+.balancesGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(180px, 1fr) );
+  grid-template-rows: repeat(auto-fill, auto-fill);
+  grid-gap: 1rem;
+  margin-bottom: var(--section-margin);
+  font-size: 0.90rem;
+}
+
+.balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: var(--border);
+	border-radius: var(--section-border-radius);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.balance > p {
+  margin: 0;
+}
+
+.balanceAssetCode {
+  font-weight: var(--bold);
+  font-size: 1.1em;
+}

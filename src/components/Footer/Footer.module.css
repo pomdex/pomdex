@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0px;
+}
+
+.siteTitle {
+  margin: 0;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 8px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.copyright {
+  margin: 0;
+}
+
+@media (hover: hover) {
+  .link:hover {
+    transform: translateY(-3px);
+  }
+}

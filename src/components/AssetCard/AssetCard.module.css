@@ -1,0 +1,65 @@
+.assetCard {
+  cursor: pointer;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 3.85rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.assetIdentifier {
+  display: flex;
+  text-align: left;
+  width: 100%;
+  align-items: baseline;
+}
+
+.assetLogo {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+.assetCode {
+  font-size: 1.5rem;
+  font-weight: var(--bold);
+  margin: 0;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.assetDomain {
+  margin: 0;
+  display: inline-block;
+}
+
+.assetIssuer {
+  display: flex;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+  .assetIssuer {
+    display: none;
+  }
+  .assetIdentifier {
+    flex-direction: column;
+    gap: 0;
+  }
+  .assetDomain {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .assetCode {
+    font-size: 1rem;
+  }
+
+  .assetLogo {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}

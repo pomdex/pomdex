@@ -1,0 +1,19 @@
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  position: static;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+}
+
+.iconMenuClosed {
+  color: #fff;
+}
+
+.iconMenuOpen {
+  color: #fff;
+}

@@ -1,0 +1,66 @@
+.headerContainer {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.input {
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 1.3rem 0.5rem;
+  outline: none;
+  height: 1.5rem;
+  align-self: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.assetsContainer {
+  cursor: pointer;
+  height: 350px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  box-sizing: border-box;
+}
+
+.asset {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 0.7rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 2.35rem;
+  height: 2.35rem;
+}
+
+.assetInfo {
+  overflow: hidden;
+}
+
+.assetCode {
+  font-weight: var(--bold);
+}
+
+.domain {
+  overflow: hidden;
+  font-size: 0.85rem;
+}
+
+.balance {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+@media (hover: hover) {
+  .asset:hover {
+    background-color: var(--secondary-background-color);
+  }
+}

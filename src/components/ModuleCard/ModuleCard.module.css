@@ -1,0 +1,9 @@
+.moduleCard {
+  --module-card-padding: 1rem;
+  background-color: var(--background-color);
+  border: var(--section-border);
+  border-radius: 12px;
+  padding: var(--module-card-padding);
+  box-sizing: border-box;
+  overflow: hidden;
+}

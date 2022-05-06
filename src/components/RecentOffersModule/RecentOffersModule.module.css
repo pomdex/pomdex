@@ -1,0 +1,184 @@
+.orderbook {
+  display: flex;
+  width: 100%;
+  margin-bottom: var(--section-margin);
+  border: var(--border);
+	border-radius: var(--section-border-radius);
+  overflow: hidden;
+}
+
+.orderbookSide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.offersHeader {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.offersHeader > button {
+  margin: 0;
+}
+
+.offerRow {
+  display: flex;
+  padding: 12px var(--table-padding);
+  gap: var(--table-padding);
+  border-top: var(--border);
+}
+
+.scrollListHeader {
+  display: flex;
+  font-weight: var(--bold);
+  scrollbar-gutter: stable;
+  padding: 0 var(--table-padding) var(--table-header-margin-bottom) var(--table-padding);
+  gap: var(--table-padding);
+}
+
+.scrollList {
+  max-height: 405px;
+  overflow: auto;
+}
+
+.scrollList div {
+  overflow: hidden;
+}
+
+.amountHeaderLabel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: var(--amount-header-label-gap);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.amountAssetCode {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--asset-code-font-size);
+}
+
+.orderbookTableHeaderItem {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.smallOrderbookTableHeaderItem {
+  flex: 0.5;
+}
+
+.orderbookRowCell {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.smallOrderbookRowCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+}
+
+.highlightedCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(56, 152, 253);
+  flex: 1;
+}
+
+.smallHighlightedCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(56, 152, 253);
+  flex: 0.5;
+}
+
+.buyPrice {
+  color: var(--color-green);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sellPrice {
+  color: var(--color-red);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.desktopOfferInputSection {
+  display: flex;
+  width: 100%;
+}
+
+.mobileOfferInputSection {
+  width: 100%;
+}
+
+.mobileTitleWrapper {
+  border-bottom: var(--border);
+}
+
+.buyOfferInput,
+.sellOfferInput {
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.buyOfferInput {
+  border-right: var(--border);
+}
+
+.offerInput {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .scrollListHeader {
+    border-top: var(--border);
+    padding-top: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .orderbookSide {
+    width: 100%;
+  }
+  
+  .orderbookTableHeaderItem,
+  .smallOrderbookTableHeaderItem,
+  .amountHeaderLabel,
+  .orderbookRowCell,
+  .highlightedCell,
+  .smallOrderbookRowCell,
+  .smallHighlightedCell,
+  .buyPrice,
+  .sellPrice,
+  .orderbook button {
+    font-size: var(--mobile-responsive-font-size);
+  }
+
+  .amountAssetCode {
+    font-size: var(--mobile-asset-code-responsive-font-size);
+  }
+}

@@ -1,0 +1,13 @@
+.liquidityPools {
+  margin: var(--section-margin) auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--section-margin);
+}
+
+@media screen and (max-width: 767px) {
+  .liquidityPools {
+    gap: 2rem;
+  }
+}

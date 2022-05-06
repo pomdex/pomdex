@@ -1,0 +1,53 @@
+.app {
+  --site-max-width: 1200px;
+  --min-padding: 10px;
+  --header-min-height: 65px;
+  --section-margin: 1.5rem;
+  --section-padding: 10px;
+  --section-border-radius: 5px;
+  --background-color: #000;
+  --secondary-background-color: rgb(45, 45, 45);
+  --color-red: rgb(255, 74, 85);
+  --color-green: rgb(0, 180, 100);
+  --color-blue: rgb(0, 122, 255);
+  --color-aquarius-purple: rgb(135, 42, 176);
+  --color-aquarius-boost: rgb(0, 183, 150);
+  --border-color: rgb(80, 80, 80);
+  --section-border-color: #fff;
+  --table-padding: 0.4rem;
+  --desktop-padding: 5rem;
+  --mobile-padding: 1rem;
+  --mobile-responsive-font-size: 3vw;
+  --amount-header-label-gap: 0.225rem;
+  --asset-code-font-size: 0.7666rem;
+  --mobile-asset-code-responsive-font-size: 2.3vw;
+  --mobile-responsive-module-title-font-size: 3.39vw;
+  --module-title-font-size: 1.13rem;
+  --table-header-margin-bottom: 6px;
+  --border: 1px solid var(--border-color);
+  --section-border: 2px solid var(--section-border-color);
+  --list-hover-color: #222;
+  --link-hover-opacity: 0.8;
+  --bold: 900;
+  --toastify-icon-color-success: var(--color-green);
+  --toastify-icon-color-error: var(--color-red);
+  text-align: center;
+  color: #fff;
+  height: 100%;
+}
+
+.app input,
+.app button {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.app button:disabled {
+  cursor: not-allowed;
+}
+
+@media (hover: hover) {
+  .app button:disabled:hover {
+    opacity: 1;
+  }
+}
